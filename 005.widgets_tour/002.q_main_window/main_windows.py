@@ -7,7 +7,7 @@ class MainWindows(QMainWindow):
         super().__init__()
         self.app = app # declare an app member
         self.setWindowTitle("Custom MainWindow")
-
+        self.setMinimumSize(1280, 500)
         # Menu Bar
         menu_bar = self.menuBar()
         
