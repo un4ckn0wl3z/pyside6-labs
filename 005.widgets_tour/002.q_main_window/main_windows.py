@@ -56,9 +56,9 @@ class MainWindows(QMainWindow):
 
     def toolbar_action_1_clicked(self):
         print("Action #1 clicked")
-        self.statusBar().showMessage("Message from Action#1")
+        self.statusBar().showMessage("Message from Action#1", 3000)
 
 
     def toolbar_action_2_clicked(self):
         print("Action #2 clicked")
-        self.statusBar().showMessage("Message from Action#2")
+        self.statusBar().showMessage("Message from Action#2", 3000)
