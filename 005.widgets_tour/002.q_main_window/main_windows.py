@@ -50,6 +50,11 @@ class MainWindows(QMainWindow):
 
         # working with status bar
         self.setStatusBar(QStatusBar(self))
+
+
+        button_1 = QPushButton("Button#1")
+        button_1.clicked.connect(self.button_1_action_clicked)
+        self.setCentralWidget(button_1)
     
     def quit_app(self):
         self.app.quit()
@@ -62,3 +67,7 @@ class MainWindows(QMainWindow):
     def toolbar_action_2_clicked(self):
         print("Action #2 clicked")
         self.statusBar().showMessage("Message from Action#2", 3000)
+
+    def button_1_action_clicked(self):
+        print("Button #1 clicked")
+        self.statusBar().showMessage("Message from Button #1 Action", 3000)
