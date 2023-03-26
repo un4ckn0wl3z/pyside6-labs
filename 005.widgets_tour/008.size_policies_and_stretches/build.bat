@@ -1,0 +1,1 @@
+pyinstaller --windowed --onefile --icon=.\icons\my_icon.ico --add-data=".\icons;.\icons" .\main.py
