@@ -1,0 +1,6 @@
+<RCC>
+  <qresource>
+    <file>images/plus-button.png</file>
+    <file>images/minus-button.png</file>
+  </qresource>
+</RCC>
