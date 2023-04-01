@@ -1,0 +1,15 @@
+<RCC>
+  <qresource>
+    <file>images/arrow-curve.png</file>
+    <file>images/arrow-curve-180.png</file>
+    <file>images/arrow-transition.png</file>
+    <file>images/arrow-transition-180.png</file>
+    <file>images/book-open-list.png</file>
+    <file>images/book-question.png</file>
+    <file>images/clipboard--arrow.png</file>
+    <file>images/clipboard--plus.png</file>
+    <file>images/cross.png</file>
+    <file>images/information-italic.png</file>
+    <file>images/scissors.png</file>
+  </qresource>
+</RCC>

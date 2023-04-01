@@ -1,0 +1,1 @@
+pyinstaller --name=thin-notepad --icon=.\images\book-open-list.ico --windowed --onefile .\main.py
