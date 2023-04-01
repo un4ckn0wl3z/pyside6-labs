@@ -33,12 +33,20 @@
         <property name="text">
          <string>Increase</string>
         </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/images/plus-button.png</normaloff>:/images/plus-button.png</iconset>
+        </property>
        </widget>
       </item>
       <item>
        <widget class="QPushButton" name="decrese_btn">
         <property name="text">
          <string>Decrease</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/images/minus-button.png</normaloff>:/images/minus-button.png</iconset>
         </property>
        </widget>
       </item>

@@ -39,11 +39,17 @@ class Ui_Widget(object):
         self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.increse_btn = QPushButton(self.widget)
         self.increse_btn.setObjectName(u"increse_btn")
+        icon = QIcon()
+        icon.addFile(u":/images/plus-button.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.increse_btn.setIcon(icon)
 
         self.horizontalLayout.addWidget(self.increse_btn)
 
         self.decrese_btn = QPushButton(self.widget)
         self.decrese_btn.setObjectName(u"decrese_btn")
+        icon1 = QIcon()
+        icon1.addFile(u":/images/minus-button.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.decrese_btn.setIcon(icon1)
 
         self.horizontalLayout.addWidget(self.decrese_btn)
 

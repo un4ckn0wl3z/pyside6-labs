@@ -2,7 +2,7 @@ from PySide6.QtWidgets import QWidget
 from PySide6.QtGui import QIcon
 from ui_widget import Ui_Widget
 
-import resource_rc #You need to manually import the compiled resource file
+# import resource_rc #You need to manually import the compiled resource file
 
 class Widget(QWidget, Ui_Widget):
     def __init__(self):
@@ -13,11 +13,11 @@ class Widget(QWidget, Ui_Widget):
         self.increse_btn.clicked.connect(self.plus)
         self.decrese_btn.clicked.connect(self.minus)
 
-        plus_icon = QIcon(":/images/plus-button.png")
-        minus_icon = QIcon(":/images/minus-button.png")
+        # plus_icon = QIcon(":/images/plus-button.png")
+        # minus_icon = QIcon(":/images/minus-button.png")
 
-        self.increse_btn.setIcon(plus_icon)
-        self.decrese_btn.setIcon(minus_icon)
+        # self.increse_btn.setIcon(plus_icon)
+        # self.decrese_btn.setIcon(minus_icon)
 
 
     def plus(self):
