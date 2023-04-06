@@ -92,13 +92,13 @@ class MainWindows(QMainWindow):
 
 
     def on_progress(self, value):
-        self.statusBar().showMessage(f"Progress: {value}%", 0)
+        self.statusBar().showMessage(f"Status: {value}", 0)
 
-    def on_finished(self):
+    def on_finished(self, message):
         self.setDisabled(False)
         self._worker_thread.quit()
         self._worker_thread.wait()
-        self.statusBar().showMessage(f"Done", 5000)
+        self.statusBar().showMessage(f"Status: {message}", 10000)
 
     def closeEvent(self, event):
         self._worker_thread.quit()
