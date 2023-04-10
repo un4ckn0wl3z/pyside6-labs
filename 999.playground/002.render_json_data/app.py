@@ -25,11 +25,12 @@ class CustomTableWidget(QTableWidget):
         return super().event(event)
     
     def showContextMenu(self, pos):
-        menu = QMenu()
-        deleteAction = menu.addAction("Delete")
-        action = menu.exec(self.mapToGlobal(pos))
-        if action == deleteAction:
-            self.removeRow(self.currentRow())
+        menu = QMenu(self)
+        row = self.indexAt(pos).row()
+        item = self.item(row, 0)
+        menu.addAction("Edit " + item.text())
+        menu.addAction("Delete " + item.text())
+        menu.exec(self.mapToGlobal(pos))
 
 if __name__ == "__main__":
     app = QApplication([])
