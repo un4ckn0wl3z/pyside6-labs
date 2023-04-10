@@ -28,7 +28,7 @@ class Widget(QWidget, Ui_Widget):
 
     def data_read_finished(self):
         print("Data read finished")
-        if(self.net_reply.error()):
-            print("Some error occured")
-        else:
-            self.textEdit.setText(str(self.m_data_buffer))
+        # if(self.net_reply.error()):
+        #     print("Some error occured")
+        # else:
+        self.textEdit.setText(str(self.m_data_buffer))
