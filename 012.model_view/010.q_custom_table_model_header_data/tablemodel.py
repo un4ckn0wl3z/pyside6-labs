@@ -59,4 +59,4 @@ class TableModel(QtCore.QAbstractTableModel):
                 if(section == 0) : return "First"
                 if(section == 1) : return "Second"
                 if(section == 2) : return "Third"
-        return super().headerData(section, orientation, role)
+        # return super().headerData(section, orientation, role)
