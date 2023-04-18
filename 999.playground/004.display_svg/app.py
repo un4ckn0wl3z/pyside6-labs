@@ -7,7 +7,6 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.resize(500, 500)
-        self
         self.bg = QFrame()
         self.bg.setStyleSheet("background-color: #333")
         self.bg_layout = QVBoxLayout(self.bg)
